@@ -11,8 +11,8 @@ body {
 }
 
 .container {
-max-width: 1200px;
-margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .button {
@@ -129,4 +129,106 @@ margin: 0 auto;
   top: 78px;
   right: -576px;
   z-index: -1;
+}
+
+/* Стили для секции с автомобилями */
+.cars-section {
+  padding: 80px 0;
+  background-color: #111111;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.cars-filter {
+  margin-bottom: 40px;
+}
+
+.cars-filter ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cars-filter li {
+  padding: 10px 20px;
+  background-color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cars-filter li:hover {
+  background-color: #555;
+}
+
+.cars-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.car-item {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.car-item:hover {
+  transform: translateY(-5px);
+}
+
+.car-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.car-info {
+  padding: 20px;
+}
+
+.car-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.car-text {
+  font-size: 14px;
+  color: #d4d4d4;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.car-prices {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.book-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #F8FF23;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.book-button:hover {
+  background-color: #A8AE16;
 }
